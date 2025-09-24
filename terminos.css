@@ -1,0 +1,234 @@
+
+/* General */
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: "Segoe UI", Arial, sans-serif; 
+}
+
+ /* Encabezado y barra de navegacion */ 
+header {
+    background: linear-gradient(90deg, #800020, #d4af37); 
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+}
+
+nav {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    padding: 15px 40px; 
+    text-align: center; 
+}
+
+nav a {
+    text-decoration: none; 
+}
+
+/* Logo de la pagina */
+.img-logo {
+    border-radius: 50%; 
+    left: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none; 
+    gap: 45px;
+    align-items: center;
+}
+
+nav ul li {
+    font-size: 18px; 
+    color: #fff8e1; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: color 0.3s, transform 0.2s; 
+}
+
+nav ul li:hover {
+    color: #1b1a17; 
+    transform: scale(1.1); 
+    border-bottom: 2px solid #413612; 
+}
+
+
+/* Contenido principal */
+.terms-container {
+    max-width: 950px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #fffdf8;
+    border-radius: 16px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Articulo general */
+.terms-card {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+/* estilo de las secciones */
+.terms-container .lead {
+    font-size: 1.25rem;
+    background: linear-gradient(90deg, #fff3e6, #fff8f2);
+    padding: 18px;
+    border-left: 6px solid #d35400;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+
+.term h2 {
+    font-size: 1.5rem;
+    color: #800020;
+    margin-bottom: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #d4af37;
+    transition: 0.3s;
+}
+
+.term h2:hover {
+    color: #d35400;
+    transform: translateX(5px);
+}
+
+
+.term p,
+.term ul {
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+
+.term ul {
+    list-style: none;
+    padding-left: 25px;
+}
+
+.term ul li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 5px;
+}
+
+.term ul li::before {
+    content: "✔";
+    color: #27ae60;
+    font-weight: bold;
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+
+
+.term a {
+    color: #d35400;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px dashed transparent;
+    transition: 0.3s;
+}
+
+.term a:hover {
+    border-bottom: 1px dashed #d35400;
+    color: #800020;
+}
+
+.boton-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Boton para regresar */
+.boton {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #800020, #d4af37);
+    color: #fff8e1; 
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* pie de pagina */
+footer {
+    background: linear-gradient(90deg, #800020, #d4af37);
+    color: #fff8e1;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr; /* izquierda | línea | derecha */
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.footer-redes {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-redes h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-redes a {
+    text-decoration: none;
+    color: #fdf6e3;
+}
+.footer-redes a:hover {
+    border-bottom: solid 2px black;
+}
+
+.redes-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px; 
+}
+
+.redes-links a {
+    color: #fff8e1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.redes-links a:hover {
+    text-decoration: underline;
+    color: #d4af37;
+}
+
+/* Separador */
+.footer-separador {
+    background-color: #fff8e1;
+    width: 2px;
+    height: 120px;
+    margin: auto;
+}
+
+.footer-copy {
+    font-size: 18px;
+    text-align: center;
+}
+
+
